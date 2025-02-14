@@ -7,22 +7,28 @@
   <link href="./src/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="font-roboto">
+<body class="font-roboto ">
   
 
   <!-- header section -->
-  <header>
+  <header class="relative">
     <nav class="bg-primary h-14 sm:h-20 flex justify-between items-center px-8">
+
+      <!-- logo -->
       <div class="logo">
         <a href="./index.html">
           <img src="./images/logo.jpg" alt="logo-image" class="w-10 sm:w-16 rounded-md">
         </a>
       </div>
-      <div class="flex nav-links">
-        <div class="hamburger sm:hidden">
-          <i class="fa-solid fa-bars text-2xl text-white cursor-pointer"></i>
-        </div>
-        <ul class="hidden sm:flex gap-4 text-xl text-white">
+
+      <!-- hamburger icon -->
+      <button class="hamburger sm:hidden">
+        <i class="fa-solid fa-bars text-2xl text-white cursor-pointer"></i>
+      </button>
+
+      <!-- all nav links -->
+      <div class="hidden sm:flex nav-links">
+        <ul class="flex gap-4 text-xl text-white">
           <li>
             <a href="./index.html" class="hover:underline hover:text-slate-200 border-2 border-white px-2 py-1 rounded-md">Home</a>
           </li>
@@ -37,8 +43,41 @@
           </li>
         </ul>
       </div>
+      
     </nav>
+
+    <!-- navigation for mobile device -->
+    <div class="mobile-nav w-full h-screen nav-links absolute top-0 left-0 z-10 bg-primary p-8 -translate-x-full duration-300 ease-in-out">
+      <button class="cross-btn absolute right-8 top-8">
+        <i class="fa-regular fa-circle-xmark text-2xl cursor-pointer text-white"></i>
+      </button>
+      <!-- logo -->
+      <div class="logo  my-8">
+        <a href="./index.html">
+          <img src="./images/logo.jpg" alt="logo-image" class="w-10 sm:w-16 rounded-md mx-auto">
+        </a>
+      </div>
+      <div class="">
+        <ul class="flex flex-col gap-6 text-xl text-white">
+          <li>
+            <a href="./index.html" class="hover:underline hover:text-slate-200 border-2 border-white px-2 py-1 rounded-md">Home</a>
+          </li>
+          <li>
+            <a href="#countries" class="hover:underline hover:text-slate-200">Countries</a>
+          </li>
+          <li>
+            <a href=".#about-us" class="hover:underline hover:text-slate-200">About Us</a>
+          </li>
+          <li>
+            <a href="#contact" class="hover:underline hover:text-slate-200">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
   </header>
+
+  
 
 
   <!-- hero section -->
@@ -316,6 +355,6 @@
     <p class="text-center font-bold bg-primary h-10 py-2 text-white">All rights reserved &copy;copyright 2025</p>
   </footer>
 
-
+  <script src="./scripts/index.js"></script>
 </body>
 </html>
