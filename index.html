@@ -78,8 +78,6 @@
   </header>
 
   
-
-
   <!-- hero section -->
   <main>
 
@@ -268,7 +266,7 @@
           </p>
         </div>
         <div class="mt-4">
-          <p class="text-md font-semibold">3.Take NEET exam:</p>
+          <p class="text-md font-semibold">3.NEET Qualified:</p>
           <p class="text-md sm:text-xl">Indian students must qualify the National Eligibility cum Entrance Test (NEET) to apply for MBBS abroad.</p>
         </div>
         <div class="mt-4">
@@ -309,34 +307,34 @@
           <img src="./images/form-image.jpg" alt="" class="rounded-md w-full">
         </div>
         <div class="p-5 rounded-md shadow-2xl">
-          <form action="" method="post">
+          <form action="" method="get" class="registration-form" name="apply-now-form">
             <div class="mt-4">
-              <label for="" class="font-bold text-xl text-[#686868] block">Full Name:</label>
-              <input type="text" class="rounded-md outline-none px-4 py-2 bg-[#e7e7e7] w-full" placeholder="Full Name">
+              <label for="fullName" class="font-bold text-xl text-[#686868] block">Full Name:</label>
+              <input type="text" class="rounded-md outline-none px-4 py-2 bg-[#e7e7e7] w-full" placeholder="Full Name" name="fullName" required id="fullName">
             </div>
             <div class="mt-4">
-              <label for="" class="font-bold text-xl text-[#686868] block">Email:</label>
-              <input type="email" class="rounded-md outline-none px-4 py-2 bg-[#e7e7e7] w-full" placeholder="Email">
+              <label for="email" class="font-bold text-xl text-[#686868] block">Email:</label>
+              <input type="email" class="rounded-md outline-none px-4 py-2 bg-[#e7e7e7] w-full" placeholder="Email" name="email" required id="email">
             </div>
             <div class="mt-4">
-              <label for="" class="font-bold text-xl text-[#686868] block">Phone:</label>
-              <input type="text" class="rounded-md outline-none px-4 py-2 bg-[#e7e7e7] w-full" placeholder="Phone">
+              <label for="phone" class="font-bold text-xl text-[#686868] block">Phone:</label>
+              <input type="text" class="rounded-md outline-none px-4 py-2 bg-[#e7e7e7] w-full" placeholder="Phone" class="phone" required id="phone">
             </div>
             <div class="mt-4">
-              <label for="" class="font-bold text-xl text-[#686868] block">Country:</label>
-              <select name="" id="" class="rounded-md outline-none px-4 py-2 bg-[#e7e7e7] w-full">
+              <label for="country" class="font-bold text-xl text-[#686868] block">Country:</label>
+              <select name="country" id="country" required class="rounded-md outline-none px-4 py-2 bg-[#e7e7e7] w-full">
                 <option value="" class="">--select country--</option>
-                <option value="">Russia</option>
-                <option value="">Ukraine</option>
-                <option value="">China</option>
-                <option value="">Tajikistan</option>
-                <option value="">Kazakhstan</option>
-                <option value="">America</option>
+                <option value="russia">Russia</option>
+                <option value="ukraine">Ukraine</option>
+                <option value="china">China</option>
+                <option value="tajiksitan">Tajikistan</option>
+                <option value="kazakhstan">Kazakhstan</option>
+                <option value="ameriaca">America</option>
               </select>
             </div>
             <div class="mt-4">
-              <label for="" class="font-bold text-xl text-[#686868] block">Message:</label>
-              <textarea rows="5" cols="37" class="rounded-md outline-none px-4 py-2 bg-[#e7e7e7] w-full" placeholder="Message"></textarea>
+              <label for="message" class="font-bold text-xl text-[#686868] block">Message:</label>
+              <textarea rows="5" cols="37" class="rounded-md outline-none px-4 py-2 bg-[#e7e7e7] w-full" placeholder="Message" name="message" id="message"></textarea>
             </div>
             <div class="mt-4">
               <button type="submit" class="bg-primary text-white font-bold px-4 py-2 rounded-md cursor-pointer hover:bg-white hover:text-primary hover:ring-4">Submit</button>
